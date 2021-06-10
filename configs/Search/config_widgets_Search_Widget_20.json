@@ -1,0 +1,22 @@
+{
+  "allPlaceholder": "",
+  "showInfoWindowOnSelect": false,
+  "sources": [
+    {
+      "url": "https://geocode.gis.lacounty.gov/geocode/rest/services/CAMS_Locator_Nationwide/GeocodeServer",
+      "name": "CAMS_Nationwide",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Find address or place",
+      "countryCode": "",
+      "panToScale": false,
+      "zoomScale": 600,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "enableLocalSearch": false,
+      "localSearchMinScale": 300000,
+      "localSearchDistance": 50000,
+      "type": "locator"
+    }
+  ]
+}

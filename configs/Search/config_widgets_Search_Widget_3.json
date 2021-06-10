@@ -1,0 +1,23 @@
+{
+  "allPlaceholder": "",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "layerId": "CAMS_9971",
+      "url": "https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/CAMS/MapServer/1",
+      "name": "Addresses (GIS)",
+      "placeholder": "",
+      "searchFields": [
+        "FullAddress_EnerGov"
+      ],
+      "displayField": "StreetName",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    }
+  ]
+}

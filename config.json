@@ -1,0 +1,1330 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "default",
+      "black",
+      "blue",
+      "cyan",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    ],
+    "version": "2.12",
+    "sharedTheme": {
+      "isPortalSupport": true,
+      "useHeader": false,
+      "useLogo": false
+    }
+  },
+  "portalUrl": "http://brandon-price.maps.arcgis.com/",
+  "appId": "",
+  "authorizedCrossOriginDomains": [
+    "cache.gis.lacounty.gov",
+    "arcgis.gis.lacounty.gov",
+    "public.gis.lacounty.gov"
+  ],
+  "title": "Address Locator",
+  "subtitle": "with Web AppBuilder for ArcGIS",
+  "keepAppState": true,
+  "logo": "images/app-logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "relativeTo": "browser"
+        },
+        "version": "2.12",
+        "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_Scalebar_Widget_2",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 55,
+          "top": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_Search_Widget_3",
+        "name": "Search",
+        "config": "configs/Search/config_widgets_Search_Widget_3.json"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_Coordinate_Widget_4",
+        "name": "Coordinate"
+      },
+      {
+        "position": {
+          "left": 55,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_5",
+        "version": "2.17",
+        "closeable": true,
+        "uri": "widgets/eSearch/Widget",
+        "openAtStart": true,
+        "name": "eSearch",
+        "config": "configs/eSearch/config__5.json"
+      },
+      {
+        "position": {
+          "left": 105,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_6",
+        "name": "EmbeddedWebsiteWidget",
+        "version": "0.0.1",
+        "closeable": true,
+        "uri": "widgets/EmbeddedWebsiteWidget/Widget",
+        "config": "configs/EmbeddedWebsiteWidget/config__6.json"
+      },
+      {
+        "position": {
+          "left": 155,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_7"
+      },
+      {
+        "position": {
+          "left": 205,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_8"
+      },
+      {
+        "position": {
+          "left": 255,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 3,
+        "id": "_9"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "bottom": 0,
+          "right": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_OverviewMap_Widget_10",
+        "name": "OverviewMap"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_HomeButton_Widget_11",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_MyLocation_Widget_12",
+        "name": "MyLocation"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.12",
+        "id": "widgets_AttributeTable_Widget_13",
+        "name": "AttributeTable"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.12",
+        "id": "widgets_Splash_Widget_14",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "top": 5,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_ZoomSlider_Widget_15",
+        "name": "ZoomSlider"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
+        "position": {
+          "top": 190,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "id": "widgets_ExtentNavigate_Widget_16",
+        "name": "ExtentNavigate",
+        "version": "2.12"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "visible": false,
+        "position": {
+          "top": 150,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.12",
+        "id": "widgets_FullScreen_Widget_17",
+        "name": "FullScreen"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "94e600a2fefc49c98549ec3a62dab3be",
+    "mapOptions": {},
+    "id": "map",
+    "portalUrl": "http://brandon-price.maps.arcgis.com/",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.12",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 2
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.12",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 3
+      },
+      {
+        "name": "Search",
+        "label": "Search_2",
+        "version": "2.12",
+        "uri": "widgets/Search/Widget",
+        "config": "configs/Search/config_widgets_Search_Widget_20.json",
+        "index": 5,
+        "id": "widgets_Search_Widget_20",
+        "position": {
+          "relativeTo": "map"
+        }
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": {
+        "widgets/Scalebar/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 40
+          },
+          "version": "1.4"
+        },
+        "widgets/Coordinate/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 17
+          },
+          "version": "1.4"
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#508dca",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
+    }
+  },
+  "wabVersion": "2.12",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {
+      "widget~_5~0": {
+        "id": "widget~_5~0",
+        "type": "Features",
+        "label": "Address",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry",
+              "alias": "Shape",
+              "domain": null
+            },
+            {
+              "name": "AIN",
+              "type": "esriFieldTypeString",
+              "alias": "AIN",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "NumPrefix",
+              "type": "esriFieldTypeString",
+              "alias": "NumPrefix",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "Number",
+              "type": "esriFieldTypeInteger",
+              "alias": "Number",
+              "domain": null
+            },
+            {
+              "name": "NumSuffix",
+              "type": "esriFieldTypeString",
+              "alias": "NumSuffix",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "PreMod",
+              "type": "esriFieldTypeString",
+              "alias": "PreMod",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "PreDir",
+              "type": "esriFieldTypeString",
+              "alias": "PreDir",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "PreType",
+              "type": "esriFieldTypeString",
+              "alias": "PreType",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "StArticle",
+              "type": "esriFieldTypeString",
+              "alias": "StArticle",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "StreetName",
+              "type": "esriFieldTypeString",
+              "alias": "StreetName",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "PostType",
+              "type": "esriFieldTypeString",
+              "alias": "PostType",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "PostDir",
+              "type": "esriFieldTypeString",
+              "alias": "PostDir",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "PostMod",
+              "type": "esriFieldTypeString",
+              "alias": "PostMod",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "BldgID",
+              "type": "esriFieldTypeString",
+              "alias": "BldgID",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "BldgSource",
+              "type": "esriFieldTypeString",
+              "alias": "BldgSource",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "BldgTypePl",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "BldgTypePl",
+              "domain": null
+            },
+            {
+              "name": "BldgType",
+              "type": "esriFieldTypeString",
+              "alias": "BldgType",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "BldgName",
+              "type": "esriFieldTypeString",
+              "alias": "BldgName",
+              "length": 25,
+              "domain": null
+            },
+            {
+              "name": "FlrTypePl",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "FlrTypePl",
+              "domain": null
+            },
+            {
+              "name": "FlrType",
+              "type": "esriFieldTypeString",
+              "alias": "FlrType",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "FlrName",
+              "type": "esriFieldTypeString",
+              "alias": "FlrName",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "UnitType",
+              "type": "esriFieldTypeString",
+              "alias": "UnitType",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "UnitName",
+              "type": "esriFieldTypeString",
+              "alias": "UnitName",
+              "length": 15,
+              "domain": null
+            },
+            {
+              "name": "ZipCode",
+              "type": "esriFieldTypeString",
+              "alias": "ZipCode",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "Zip4",
+              "type": "esriFieldTypeString",
+              "alias": "Zip4",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "LegalComm",
+              "type": "esriFieldTypeString",
+              "alias": "LegalComm",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "PostComm1",
+              "type": "esriFieldTypeString",
+              "alias": "PostComm1",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "PostComm2",
+              "type": "esriFieldTypeString",
+              "alias": "PostComm2",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "PostComm3",
+              "type": "esriFieldTypeString",
+              "alias": "PostComm3",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "OtherComm1",
+              "type": "esriFieldTypeString",
+              "alias": "OtherComm1",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "OtherComm2",
+              "type": "esriFieldTypeString",
+              "alias": "OtherComm2",
+              "length": 30,
+              "domain": null
+            },
+            {
+              "name": "Source",
+              "type": "esriFieldTypeString",
+              "alias": "Source",
+              "length": 35,
+              "domain": null
+            },
+            {
+              "name": "SourceID",
+              "type": "esriFieldTypeString",
+              "alias": "SourceID",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "MADRank",
+              "type": "esriFieldTypeDouble",
+              "alias": "MADRank",
+              "domain": null
+            },
+            {
+              "name": "AROIDstr",
+              "type": "esriFieldTypeString",
+              "alias": "AROIDstr",
+              "length": 36,
+              "domain": null
+            },
+            {
+              "name": "OIDstr",
+              "type": "esriFieldTypeString",
+              "alias": "OIDstr",
+              "length": 36,
+              "domain": null
+            },
+            {
+              "name": "PropType",
+              "type": "esriFieldTypeString",
+              "alias": "PropType",
+              "length": 25,
+              "domain": null
+            },
+            {
+              "name": "ObjID",
+              "type": "esriFieldTypeInteger",
+              "alias": "ObjID",
+              "domain": null
+            },
+            {
+              "name": "PreDirAbbr",
+              "type": "esriFieldTypeString",
+              "alias": "PreDirAbbr",
+              "length": 2,
+              "domain": null
+            },
+            {
+              "name": "PostDirAbbr",
+              "type": "esriFieldTypeString",
+              "alias": "PostDirAbbr",
+              "length": 2,
+              "domain": null
+            },
+            {
+              "name": "PreTypeAbbr",
+              "type": "esriFieldTypeString",
+              "alias": "PreTypeAbbr",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "PostTypeAbbr",
+              "type": "esriFieldTypeString",
+              "alias": "PostTypeAbbr",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "FullName",
+              "type": "esriFieldTypeString",
+              "alias": "FullName",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "UpdateDate",
+              "type": "esriFieldTypeDate",
+              "alias": "UpdateDate",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "FullAddress",
+              "type": "esriFieldTypeString",
+              "alias": "FullAddress",
+              "length": 75,
+              "domain": null
+            },
+            {
+              "name": "UniqueID",
+              "type": "esriFieldTypeString",
+              "alias": "UniqueID",
+              "length": 125,
+              "domain": null
+            },
+            {
+              "name": "StName_EnerGov",
+              "type": "esriFieldTypeString",
+              "alias": "StName_EnerGov",
+              "length": 100,
+              "domain": null
+            },
+            {
+              "name": "FullAddress_EnerGov",
+              "type": "esriFieldTypeString",
+              "alias": "FullAddress_EnerGov",
+              "length": 100,
+              "domain": null
+            },
+            {
+              "name": "MSAG_City",
+              "type": "esriFieldTypeString",
+              "alias": "MSAG_City",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "ESN",
+              "type": "esriFieldTypeString",
+              "alias": "ESN",
+              "length": 3,
+              "domain": null
+            }
+          ],
+          "displayField": "StreetName",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          "typeIdField": null
+        }
+      },
+      "widget~_5~1": {
+        "id": "widget~_5~1",
+        "type": "Features",
+        "label": "Parcels",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null
+            },
+            {
+              "name": "AIN",
+              "type": "esriFieldTypeString",
+              "alias": "AIN",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "APN",
+              "type": "esriFieldTypeString",
+              "alias": "APN",
+              "length": 12,
+              "domain": null
+            },
+            {
+              "name": "SitusHouseNo",
+              "type": "esriFieldTypeString",
+              "alias": "SitusHouseNo",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "SitusFraction",
+              "type": "esriFieldTypeString",
+              "alias": "SitusFraction",
+              "length": 3,
+              "domain": null
+            },
+            {
+              "name": "SitusDirection",
+              "type": "esriFieldTypeString",
+              "alias": "SitusDirection",
+              "length": 1,
+              "domain": null
+            },
+            {
+              "name": "SitusUnit",
+              "type": "esriFieldTypeString",
+              "alias": "SitusUnit",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "SitusStreet",
+              "type": "esriFieldTypeString",
+              "alias": "SitusStreet",
+              "length": 32,
+              "domain": null
+            },
+            {
+              "name": "SitusAddress",
+              "type": "esriFieldTypeString",
+              "alias": "SADDR",
+              "length": 55,
+              "domain": null
+            },
+            {
+              "name": "SitusCity",
+              "type": "esriFieldTypeString",
+              "alias": "CITY",
+              "length": 24,
+              "domain": null
+            },
+            {
+              "name": "SitusZIP",
+              "type": "esriFieldTypeString",
+              "alias": "ZIP",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "SitusFullAddress",
+              "type": "esriFieldTypeString",
+              "alias": "SitusFullAddress",
+              "length": 84,
+              "domain": null
+            },
+            {
+              "name": "TaxRateArea",
+              "type": "esriFieldTypeString",
+              "alias": "TaxRateArea",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "TaxRateCity",
+              "type": "esriFieldTypeString",
+              "alias": "TaxRateCity",
+              "length": 21,
+              "domain": null
+            },
+            {
+              "name": "AgencyClassNo",
+              "type": "esriFieldTypeInteger",
+              "alias": "AgencyClassNo",
+              "domain": null
+            },
+            {
+              "name": "AgencyName",
+              "type": "esriFieldTypeString",
+              "alias": "AgencyName",
+              "length": 255,
+              "domain": null
+            },
+            {
+              "name": "AgencyType",
+              "type": "esriFieldTypeString",
+              "alias": "AgencyType",
+              "length": 255,
+              "domain": null
+            },
+            {
+              "name": "UseCode",
+              "type": "esriFieldTypeString",
+              "alias": "UseCode",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "UseCode_2",
+              "type": "esriFieldTypeString",
+              "alias": "UseCode_2",
+              "length": 2,
+              "domain": null
+            },
+            {
+              "name": "UseType",
+              "type": "esriFieldTypeString",
+              "alias": "UseType",
+              "length": 14,
+              "domain": null
+            },
+            {
+              "name": "UseDescription",
+              "type": "esriFieldTypeString",
+              "alias": "UseDescription",
+              "length": 61,
+              "domain": null
+            },
+            {
+              "name": "DesignType1",
+              "type": "esriFieldTypeString",
+              "alias": "DesignType1",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "YearBuilt1",
+              "type": "esriFieldTypeString",
+              "alias": "YearBuilt1",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "EffectiveYear1",
+              "type": "esriFieldTypeString",
+              "alias": "EffectiveYear1",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Units1",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Units1",
+              "domain": null
+            },
+            {
+              "name": "Bedrooms1",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bedrooms1",
+              "domain": null
+            },
+            {
+              "name": "Bathrooms1",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bathrooms1",
+              "domain": null
+            },
+            {
+              "name": "SQFTmain1",
+              "type": "esriFieldTypeInteger",
+              "alias": "SQFTmain1",
+              "domain": null
+            },
+            {
+              "name": "DesignType2",
+              "type": "esriFieldTypeString",
+              "alias": "DesignType2",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "YearBuilt2",
+              "type": "esriFieldTypeString",
+              "alias": "YearBuilt2",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "EffectiveYear2",
+              "type": "esriFieldTypeString",
+              "alias": "EffectiveYear2",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Units2",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Units2",
+              "domain": null
+            },
+            {
+              "name": "Bedrooms2",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bedrooms2",
+              "domain": null
+            },
+            {
+              "name": "Bathrooms2",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bathrooms2",
+              "domain": null
+            },
+            {
+              "name": "SQFTmain2",
+              "type": "esriFieldTypeInteger",
+              "alias": "SQFTmain2",
+              "domain": null
+            },
+            {
+              "name": "DesignType3",
+              "type": "esriFieldTypeString",
+              "alias": "DesignType3",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "YearBuilt3",
+              "type": "esriFieldTypeString",
+              "alias": "YearBuilt3",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "EffectiveYear3",
+              "type": "esriFieldTypeString",
+              "alias": "EffectiveYear3",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Units3",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Units3",
+              "domain": null
+            },
+            {
+              "name": "Bedrooms3",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bedrooms3",
+              "domain": null
+            },
+            {
+              "name": "Bathrooms3",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bathrooms3",
+              "domain": null
+            },
+            {
+              "name": "SQFTmain3",
+              "type": "esriFieldTypeInteger",
+              "alias": "SQFTmain3",
+              "domain": null
+            },
+            {
+              "name": "DesignType4",
+              "type": "esriFieldTypeString",
+              "alias": "DesignType4",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "YearBuilt4",
+              "type": "esriFieldTypeString",
+              "alias": "YearBuilt4",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "EffectiveYear4",
+              "type": "esriFieldTypeString",
+              "alias": "EffectiveYear4",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Units4",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Units4",
+              "domain": null
+            },
+            {
+              "name": "Bedrooms4",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bedrooms4",
+              "domain": null
+            },
+            {
+              "name": "Bathrooms4",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bathrooms4",
+              "domain": null
+            },
+            {
+              "name": "SQFTmain4",
+              "type": "esriFieldTypeInteger",
+              "alias": "SQFTmain4",
+              "domain": null
+            },
+            {
+              "name": "DesignType5",
+              "type": "esriFieldTypeString",
+              "alias": "DesignType5",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "YearBuilt5",
+              "type": "esriFieldTypeString",
+              "alias": "YearBuilt5",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "EffectiveYear5",
+              "type": "esriFieldTypeString",
+              "alias": "EffectiveYear5",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Units5",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Units5",
+              "domain": null
+            },
+            {
+              "name": "Bedrooms5",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bedrooms5",
+              "domain": null
+            },
+            {
+              "name": "Bathrooms5",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "Bathrooms5",
+              "domain": null
+            },
+            {
+              "name": "SQFTmain5",
+              "type": "esriFieldTypeInteger",
+              "alias": "SQFTmain5",
+              "domain": null
+            },
+            {
+              "name": "Roll_Year",
+              "type": "esriFieldTypeString",
+              "alias": "Roll_Year",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Roll_LandValue",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_LandValue",
+              "domain": null
+            },
+            {
+              "name": "Roll_ImpValue",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_ImpValue",
+              "domain": null
+            },
+            {
+              "name": "Roll_PersPropValue",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_PersPropValue",
+              "domain": null
+            },
+            {
+              "name": "Roll_FixtureValue",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_FixtureValue",
+              "domain": null
+            },
+            {
+              "name": "Roll_HomeOwnersExemp",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_HomeOwnersExemp",
+              "domain": null
+            },
+            {
+              "name": "Roll_RealEstateExemp",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_RealEstateExemp",
+              "domain": null
+            },
+            {
+              "name": "Roll_PersPropExemp",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_PersPropExemp",
+              "domain": null
+            },
+            {
+              "name": "Roll_FixtureExemp",
+              "type": "esriFieldTypeInteger",
+              "alias": "Roll_FixtureExemp",
+              "domain": null
+            },
+            {
+              "name": "Roll_LandBaseYear",
+              "type": "esriFieldTypeString",
+              "alias": "Roll_LandBaseYear",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "Roll_ImpBaseYear",
+              "type": "esriFieldTypeString",
+              "alias": "Roll_ImpBaseYear",
+              "length": 4,
+              "domain": null
+            },
+            {
+              "name": "SpatialChangeDate",
+              "type": "esriFieldTypeDate",
+              "alias": "SpatialChangeDate",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "ParcelCreateDate",
+              "type": "esriFieldTypeInteger",
+              "alias": "ParcelCreateDate",
+              "domain": null
+            },
+            {
+              "name": "ParcelTypeCode",
+              "type": "esriFieldTypeInteger",
+              "alias": "ParcelTypeCode",
+              "domain": null
+            },
+            {
+              "name": "Assr_Map",
+              "type": "esriFieldTypeString",
+              "alias": "Assr_Map",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "Assr_Index_Map",
+              "type": "esriFieldTypeString",
+              "alias": "Assr_Index_Map",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "QualityClass1",
+              "type": "esriFieldTypeString",
+              "alias": "QualityClass1",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "QualityClass2",
+              "type": "esriFieldTypeString",
+              "alias": "QualityClass2",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "QualityClass3",
+              "type": "esriFieldTypeString",
+              "alias": "QualityClass3",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "QualityClass4",
+              "type": "esriFieldTypeString",
+              "alias": "QualityClass4",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "QualityClass5",
+              "type": "esriFieldTypeString",
+              "alias": "QualityClass5",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLine1",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLine1",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLine2",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLine2",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLine3",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLine3",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLine4",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLine4",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLine5",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLine5",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescLineLast",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescLineLast",
+              "length": 40,
+              "domain": null
+            },
+            {
+              "name": "LegalDescription",
+              "type": "esriFieldTypeString",
+              "alias": "LegalDescription",
+              "length": 500,
+              "domain": null
+            },
+            {
+              "name": "CENTER_LAT",
+              "type": "esriFieldTypeDouble",
+              "alias": "CENTER_LAT",
+              "domain": null
+            },
+            {
+              "name": "CENTER_LON",
+              "type": "esriFieldTypeDouble",
+              "alias": "CENTER_LON",
+              "domain": null
+            },
+            {
+              "name": "CENTER_X",
+              "type": "esriFieldTypeDouble",
+              "alias": "CENTER_X",
+              "domain": null
+            },
+            {
+              "name": "CENTER_Y",
+              "type": "esriFieldTypeDouble",
+              "alias": "CENTER_Y",
+              "domain": null
+            },
+            {
+              "name": "LAT_LON",
+              "type": "esriFieldTypeString",
+              "alias": "LAT_LON",
+              "length": 62,
+              "domain": null
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry",
+              "alias": "Shape",
+              "domain": null
+            },
+            {
+              "name": "Shape.STArea()",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape.STArea()",
+              "domain": null
+            },
+            {
+              "name": "Shape.STLength()",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape.STLength()",
+              "domain": null
+            }
+          ],
+          "displayField": "AIN",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          "typeIdField": null
+        }
+      }
+    },
+    "settings": {}
+  }
+}

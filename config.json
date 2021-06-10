@@ -19,7 +19,7 @@
     }
   },
   "portalUrl": "https://brandon-price.maps.arcgis.com/",
-  "appId": "94e600a2fefc49c98549ec3a62dab3be",
+  "appId": "",
   "authorizedCrossOriginDomains": [
     "cache.gis.lacounty.gov",
     "arcgis.gis.lacounty.gov",

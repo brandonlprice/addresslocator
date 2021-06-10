@@ -18,7 +18,7 @@
       "useLogo": false
     }
   },
-  "portalUrl": "http://brandon-price.maps.arcgis.com/",
+  "portalUrl": "https://brandon-price.maps.arcgis.com/",
   "appId": "",
   "authorizedCrossOriginDomains": [
     "cache.gis.lacounty.gov",
@@ -244,7 +244,7 @@
     "itemId": "94e600a2fefc49c98549ec3a62dab3be",
     "mapOptions": {},
     "id": "map",
-    "portalUrl": "http://brandon-price.maps.arcgis.com/",
+    "portalUrl": "https://brandon-price.maps.arcgis.com/",
     "mapRefreshInterval": {
       "useWebMapRefreshInterval": true
     }
